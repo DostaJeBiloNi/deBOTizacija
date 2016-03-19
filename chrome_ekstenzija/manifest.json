@@ -1,0 +1,19 @@
+{
+  "name": "debotizacija",
+  "version": "0.0.1",
+  "manifest_version" : 2,
+  "description": "debotizacija",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://*.mondo.rs/Comment/*"],
+      "js": ["mondo.js"]
+    },
+    {
+      "matches": ["http://*.n1info.com/*"],
+      "js": ["n1.js"]
+    }
+  ]
+}
